@@ -29,6 +29,27 @@
 }
 
 
+
+/* Variables générales */
+:root {
+	--font-principal :	'lato-regular';
+	--font-title-bold :	'lato-bold';
+	--font-title-black :'lato-black';
+
+	--color-main :		 #1abc9c;
+	--color-text :		 #a1b1bc;
+	--color-secondary :	 #2c3e50;
+
+}
+/* Classes generales */
+.d-flex {
+	display: flex;
+}
+
+.container {
+	max-width: 1170px;
+}
+
 /* Icon font awesome */
 .comments::before {
 	font-family: "Font Awesome 5 Free";
