@@ -1,19 +1,17 @@
-const likeMe = document.getElementById("like");
+$(".fa-heart").on('click', function(event){
+    // event.stopPropagation();
+    // event.stopImmediatePropagation();
+    let cpt = $(this).next().text();
 
-var cpt = document.getElementById("number").innerHTML; // Initialisation du compteur
-var node =  document.getElementById("number"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
- 
-
-
-likeMe.addEventListener('click', function() {
-    this.className = "fas fa-heart";
-    if (this.style.color != "rgb(26, 188, 156)") {
-        this.style.color = "rgb(26, 188, 156)";
-        node.innerHTML = ++cpt;
-    } else {
+    if (this.className == 'far fa-heart') { //like
+        this.className = 'fas fa-heart';
+        this.style.color = 'rgb(26, 188, 156)';
+        $(this).next().text(++cpt);
+    } else {    //dislike
+        this.className = 'far fa-heart';
         this.style.color = "";
-        this.className = "far fa-heart";
-        node.innerHTML = --cpt;
+        $(this).next().text(--cpt);
     }
-
 });
+
+
