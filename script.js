@@ -17,3 +17,5 @@ likeMe.addEventListener('click', function() {
     }
 
 });
+
+const classLike = document.getElementsByClassName("")
