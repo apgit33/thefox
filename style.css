@@ -124,7 +124,7 @@ p {
 
 a {text-decoration: none;}
 .categories {color: var(--color-text);}
-
+iframe {border: none;} /* bordure des vidéos* /
 /* Gestion des titres */
 h1{
 	font-family: var(--font-principal);
