@@ -14,4 +14,14 @@ $(".fa-heart").on('click', function(event){
     }
 });
 
+var elementaudio = document.getElementById("first-audio");
+console.log(elementaudio);
+elementaudio.volume = 0.3;
 
+$( 'audio' ).audioPlayer({
+    classPrefix: 'audioplayer',
+    strPlay: 'Play',
+    strPause: 'Pause',
+    strVolume: 'Volume'
+ });
+ 
