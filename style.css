@@ -28,8 +28,6 @@
 	font-style: normal;
 }
 
-
-
 /* Variables générales */
 :root {
 	--font-principal :	'lato-regular';
@@ -38,7 +36,6 @@
 
 	--color-main :		 #2c3e50;
 	--color-text :		 #a1b1bc;
-<<<<<<< HEAD
 	--color-secondary :	 #1abc9c;
 	--color-border :	 #ecf0f1;
 	--color-white :		 white;
@@ -47,56 +44,50 @@
 	--bck-principal :	 #222533;
 	--bck-article :	 	 #f9fafb;
 
+	--size-text-12 : 			12px;
+	--size-text-13 : 			13px;
 	--size-text :			 	14px;
+	--size-text-15 : 			15px;
 	--size-text-secondary :		16px;
+	--size-text-three : 		19px;
 	--size-title-secondary : 	24px;
 	--size-title : 				30px;
 
 	--cursor : url('img/pointer.png'),pointer;
-
 }
 
 article footer .far, article footer .fas {
 	margin-right: 5px;
-=======
-    --color-secondary :	 #1abc9c; 
-    
-	--size-text-12 : 12px;
-	--size-text-13 : 13px;
-	--size-text : 14px;
-	--size-text-15 : 15px;
-    --size-text-secondary : 16px;
-    --size-text-three : 19px;
-    --size-title-secondary : 24px;
-    --size-title : 30px;
-
-
-    --justify-content: space-between;
-    --align-items: center;
->>>>>>> style-header
 }
 /* Classes generales */
 
 /* Flex */
-.d-flex {
-	display: flex;
-}
-<<<<<<< HEAD
-.jc-between {
-	justify-content: space-between;
-}
+	.d-flex {
+		display: flex;
+	}
+	.between{
+		justify-content: space-between;  
+	}
+	.around{
+		justify-content: space-around;
+	}
+	.align-item-center{
+		align-items: center;
+	}
 
-=======
-.beetween{
-    justify-content: space-between;  
-}
-.around{
-    justify-content: space-around;
-}
-.align-item-center{
-    align-items: center;
-}
->>>>>>> style-header
+/* margin */
+	.mr-0{
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mr-right1{
+		margin-right: 1rem;
+	}
+	.mr-right05{
+		margin-right: 0.5rem;
+	}
+
 .container {
 	max-width: 1170px;
 	padding-top: 84px;
@@ -112,6 +103,93 @@ p {
 a {text-decoration: none;}
 .categories {color: var(--color-text);}
 
+/* Header ---------------------------------------*/
+
+/* generic */
+nav a{
+	line-height: 0rem;
+}
+nav a{
+	font-family: var(--color-text);
+	font-size: var(--size-text-secondary);
+	color:var(--color-text);
+	margin-left: 2.8125rem;
+}
+
+nav a:hover{
+    font-weight: 700; 
+	border-top: solid;
+	border-color: #1abc9c;
+    padding-top: 2.3rem;
+	border-width: 3px;
+	color: #1abc9c;
+}
+#mycart{
+	margin-left: 35rem;
+}
+ul{
+	list-style: none;
+	font-family: var(--font-principal);
+	font-size: var(--size-text-secondary);
+	color: var(--color-text);
+}
+ul a{
+	line-height: 0rem;
+}
+
+#logo {
+	font-size: 2.25rem;
+	color: var(--color-main);
+	font-family: var(--font-principal);
+}
+#logo span{
+	font-family: var(--font-title-black);
+}
+
+/* fonts-family */
+.f-lato-bold{
+    font-family: var(--font-title-bold);
+}
+.f-lato-black{
+    font-family: var(--font-title-black);
+}
+
+/* Fonts-size */
+.f-19{
+    font-size: var(--size-text-three);
+}
+.f-13{
+    font-size: var(--size-text-13);
+}
+
+/* color */
+.color-text{
+    color: var(--color-text);
+}
+
+.icone-rsociaux {
+	font-family: "ElegantIcons";
+	content: "&#xe081;";
+	margin-right: 5px;
+	font-size:var(--size-text);
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'ElegantIcons';
+	content: attr(data-icon);
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin-right: 1rem;
+	font-size:var(--size-text);
+	color: var(--color-text);
+}
+
+/* Header end -------------------------------------*/
+
 /* Gestion des titres */
 main h2 {
 	font-family: var(--font-title-bold);
@@ -119,13 +197,13 @@ main h2 {
 	color: var(--color-main);
 	line-height: 30px;
 	font-weight: 100;
-	margin-bottom: 15px;}
+	margin-bottom: 15px;
+}
 
 /* +++++++++++++++++++++++
 	Début de la partie main
    +++++++++++++++++++++++ */
 main {background-color: var(--bck-article);}
-main>div>div:first-child {justify-content: space-between;}
 
 .colonne {
 	width: 31.65%;
@@ -358,118 +436,8 @@ article {
 /* +++++++++++++++++++++++
 	Fin de la partie main
    +++++++++++++++++++++++ */
-.likes::before {
-	font-family: "Font Awesome 5 Free";
-	font-weight: 400;
-	content: "\f004";
-	margin-right: 5px;
-}
 
-/* Header ---------------------------------------*/
 
-/* margin */
-.mr-0{
-	margin: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-.mr-right1{
-	margin-right: 1rem;
-}
-.mr-right05{
-	margin-right: 0.5rem;
-}
-.max-width{
-	max-width: 1170px;
-}
-
-/* generic */
-a{
-	text-decoration: none;
-}
-nav a{
-	line-height: 0rem;
-}
-nav a{
-	font-family: var(--color-text);
-	font-size: var(--size-text-secondary);
-	color:var(--color-text);
-	margin-left: 2.8125rem;
-}
-
-header a:hover{
-    font-weight: 700; 
-	border-top: solid;
-	border-color: #1abc9c;
-    padding-top: 2.3rem;
-	border-width: 3px;
-	color: #1abc9c;
-}
-#mycart{
-	margin-left: 35rem;
-}
-ul{
-	list-style: none;
-	font-family: var(--font-principal);
-	font-size: var(--size-text-secondary);
-	color: var(--color-text);
-}
-ul a{
-	line-height: 0rem;
-}
-
-#logo, span{
-	font-size: 2.25rem;
-	color: var(--color-main);
-	font-family: var(--font-principal);
-}
-#logo span{
-	font-family: var(--font-title-black);
-}
-
-/* fonts-family */
-.f-lato-bold{
-    font-family: var(--font-title-bold);
-}
-.f-lato-black{
-    font-family: var(--font-title-black);
-}
-
-/* Fonts-size */
-.f-19{
-    font-size: var(--size-text-three);
-}
-.f-13{
-    font-size: var(--size-text-13);
-}
-
-/* color */
-.color-text{
-    color: var(--color-text);
-}
-
-.icone-rsociaux {
-	font-family: "ElegantIcons";
-	content: "&#xe081;";
-	margin-right: 5px;
-	font-size:var(--size-text);
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'ElegantIcons';
-	content: attr(data-icon);
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin-right: 1rem;
-	font-size:var(--size-text);
-	color: var(--color-text);
-}
-
-/* Header end -------------------------------------*/
 /* Footer partie 1 -------------------------------------*/
 #footer-part1{
 	background-color: #222533;
