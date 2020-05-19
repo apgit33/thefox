@@ -43,6 +43,7 @@
 
 	--bck-principal :	 #222533;
 	--bck-article :	 	 #f9fafb;
+	--bck-footer : 		 #171d22;
 
 	--size-text-12 : 			12px;
 	--size-text-13 : 			13px;
@@ -90,10 +91,27 @@ article footer .far, article footer .fas {
 	.mr-right05{
 		margin-right: 8px;
 	}
+	.mr-right02{
+		margin-right: 3.2px;
+	}
+	.mr-right01{
+		margin-left: 8px;
+	}
+	.mr-top1{
+		margin-top: 16px;
+	}
+	.mr-top2{
+		margin-top: 32px;
+	}
+	.mr-top3{
+		margin-top: 48px;
+	}
+	.margin-top-100{
+		margin-top: 100px;
+	}
 
 .container {
 	max-width: 1170px;
-	padding-top: 84px;
 	margin: 0 auto;
 }
 
@@ -106,10 +124,25 @@ p {
 a {text-decoration: none;}
 .categories {color: var(--color-text);}
 
+/* Gestion des titres */
+h1{
+	font-family: var(--font-principal);
+	font-size: var(--size-title);
+	color:var(--bck-principal)
+}
+main h2 {
+	font-family: var(--font-title-bold);
+	font-size: var(--size-title-secondary);
+	color: var(--color-main);
+	line-height: 30px;
+	font-weight: 100;
+	margin-bottom: 15px;
+}
+
 /* Header ---------------------------------------*/
 
-/* generic */
 
+/* Menu  */
 nav a{
 	font-size: var(--size-text-secondary);
 	color:var(--color-text);
@@ -124,21 +157,44 @@ nav a:hover{
 	border-width: 3px;
 	color: #1abc9c;
 }
+
+#nav-pages p span{
+	line-height: 0rem;
+	margin-left: 0.5rem;
+}
+#border-deco-header-shadow{
+	border-top: solid 0.1rem;
+	border-color: rgba(161 177 188 / 20%);
+	margin-top: -30px;
+}	
+
+
+.border-deco-header{
+	border-top: solid 0.1rem;
+	border-color: rgba(161 177 188 / 20%);	
+}
+
+
 #mycart{
-	margin-left: 560px;
+	margin-left: 35rem;
+	width: 105px;
+	height: 30px;
+	border: solid 0.1rem;
+	border-color: rgba(161 177 188 / 20%);	
 }
 ul{
 	list-style: none;
 	font-family: var(--font-principal);
 	font-size: var(--size-text-secondary);
+	margin-top: 0;
 }
 
-#logo {
+.logo {
 	font-size: 36px;
 	color: var(--color-main);
 	font-family: var(--font-principal);
 }
-#logo span{
+.logo span{
 	font-family: var(--font-title-black);
 }
 
@@ -186,15 +242,6 @@ ul{
 
 /* Header end -------------------------------------*/
 
-/* Gestion des titres */
-main h2 {
-	font-family: var(--font-title-bold);
-	font-size: var(--size-title-secondary);
-	color: var(--color-main);
-	line-height: 30px;
-	font-weight: 100;
-	margin-bottom: 15px;
-}
 
 /* +++++++++++++++++++++++
 	Début de la partie main
@@ -435,15 +482,25 @@ article {
 /* Footer partie 1 -------------------------------------*/
 #footer-part1{
 	background-color: var(--bck-principal);
+	height : 29.1875rem;
 }
 #footer-enf1, #footer-enf2, #footer-enf3, #footer-enf4{
 	width: 25%;
 }
 #bg-color{
-	background-color: var(--color-main);
-	height: 52px;
+	background-color: var(--bck-footer);
+	height: 100px;
+	margin-top: 92px;
 }
-#bg-color p{
+
+#bg-color div p{
+	font-size: var(--size-text-15);
+}
+.about-text {
+	line-height: 24px;
+	width: 89%;
+}
+.source {
 	font-size: var(--size-text-15);
 }
 
@@ -453,6 +510,7 @@ footer h2{
 	font-size: var(--size-text-secondary);
 	letter-spacing: 5.6px;
 	margin-bottom: 0;
+
 }
 .title-article{
 	color: var(--color-white);
@@ -465,7 +523,14 @@ footer h2{
 }
 footer hr{
 	color: var(--color-secondary);
-	width: 71px;
+	width: 4.4375rem;
 	margin-left: 0;
-	margin-top: 3px;
+}
+.border-top-deco{
+	width: 16.5rem;
+	border-top: solid 0.1rem;
+	border-color: rgba(161 177 188 / 20%);	
+}
+.learn-more{
+	font-family: var(--font-title-black);
 }
