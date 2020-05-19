@@ -18,4 +18,9 @@ likeMe.addEventListener('click', function() {
 
 });
 
-const classLike = document.getElementsByClassName("")
+const classLike = document.getElementsByClassName("coeur");
+
+classLike.addEventListener('click', function() {
+
+
+});
