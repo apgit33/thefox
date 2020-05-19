@@ -71,6 +71,9 @@ article footer .far, article footer .fas {
 	.around{
 		justify-content: space-around;
 	}
+	.center {
+		justify-content: center;
+	}
 	.align-item-center{
 		align-items: center;
 	}
@@ -82,10 +85,10 @@ article footer .far, article footer .fas {
 		margin-right: auto;
 	}
 	.mr-right1{
-		margin-right: 1rem;
+		margin-right: 16px;
 	}
 	.mr-right05{
-		margin-right: 0.5rem;
+		margin-right: 8px;
 	}
 
 .container {
@@ -106,39 +109,32 @@ a {text-decoration: none;}
 /* Header ---------------------------------------*/
 
 /* generic */
+
 nav a{
-	line-height: 0rem;
-}
-nav a{
-	font-family: var(--color-text);
 	font-size: var(--size-text-secondary);
 	color:var(--color-text);
-	margin-left: 2.8125rem;
+	margin-left: 45px;
 }
 
 nav a:hover{
     font-weight: 700; 
 	border-top: solid;
 	border-color: #1abc9c;
-    padding-top: 2.3rem;
+    padding-top: 36.8px;
 	border-width: 3px;
 	color: #1abc9c;
 }
 #mycart{
-	margin-left: 35rem;
+	margin-left: 560px;
 }
 ul{
 	list-style: none;
 	font-family: var(--font-principal);
 	font-size: var(--size-text-secondary);
-	color: var(--color-text);
-}
-ul a{
-	line-height: 0rem;
 }
 
 #logo {
-	font-size: 2.25rem;
+	font-size: 36px;
 	color: var(--color-main);
 	font-family: var(--font-principal);
 }
@@ -183,7 +179,7 @@ ul a{
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	margin-right: 1rem;
+	margin-right: 16px;
 	font-size:var(--size-text);
 	color: var(--color-text);
 }
@@ -327,9 +323,7 @@ article {
 		background-color: #555761;
 		text-align: center;
 	}
-	.center {
-		justify-content: center;
-	}
+
 	.circle{
 		display: block;
 		width: 40px;
@@ -440,44 +434,34 @@ article {
 
 /* Footer partie 1 -------------------------------------*/
 #footer-part1{
-	background-color: #222533;
+	background-color: var(--bck-principal);
 }
 #footer-enf1, #footer-enf2, #footer-enf3, #footer-enf4{
-	flex: 0 25%;
+	width: 25%;
 }
 #bg-color{
 	background-color: var(--color-main);
-	height: 3.25rem;
+	height: 52px;
 }
 #bg-color p{
-	color: var(--color-text);
-	font-size: var(--size-text-15);
-	font-family: var(--font-principal);
-}
-
-#bg-color span{
-	color:var(--color-secondary);
 	font-size: var(--size-text-15);
 }
 
 footer h2{
 	font-family: var(--font-title-black);
-	color: white;
+	color: var(--color-white);
 	font-size: var(--size-text-secondary);
-	letter-spacing: 0.35rem;
+	letter-spacing: 5.6px;
 	margin-bottom: 0;
 }
 .title-article{
-	font-size:var(--size-text);
-	color: white;
+	color: var(--color-white);
 	font-family: var(--font-title-bold);
 	margin-bottom: 0;
 }
 .date-article{
-	color:var(--color-text);
 	font-size: var(--size-text-12);
-	font-family: var(--font-principal);
-	margin-top: 0.3rem;
+	margin-top: 4.8px;
 }
 footer hr{
 	color: var(--color-secondary);
