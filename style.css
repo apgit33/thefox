@@ -129,7 +129,9 @@ a {text-decoration: none;}
 h1{
 	font-family: var(--font-principal);
 	font-size: var(--size-title);
-	color:var(--bck-principal)
+	color:var(--bck-principal);
+	font-weight: 100;
+	margin: 2.8125rem 0;
 }
 main h2 {
 	font-family: var(--font-title-bold);
@@ -153,10 +155,10 @@ nav a{
 nav a:hover{
     font-weight: 700; 
 	border-top: solid;
-	border-color: #1abc9c;
+	border-color: var(--color-secondary);
     padding-top: 2.3rem;
 	border-width: 0.1875rem;
-	color: #1abc9c;
+	color: var(--color-secondary);
 }
 
 #nav-pages p span{
@@ -173,6 +175,7 @@ nav a:hover{
 .border-deco-header{
 	border-top: solid 0.1rem;
 	border-color: rgba(161 177 188 / 20%);	
+	box-shadow: 0rem 0.3125rem 0.625rem 0rem rgba(0,0,0,0.1);
 }
 
 
@@ -188,12 +191,14 @@ ul{
 	font-family: var(--font-principal);
 	font-size: var(--size-text-secondary);
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .logo {
 	font-size: 2.25rem;
 	color: var(--color-main);
 	font-family: var(--font-principal);
+	margin-bottom: 1rem;
 }
 .logo span{
 	font-family: var(--font-title-black);
@@ -247,7 +252,10 @@ ul{
 /* +++++++++++++++++++++++
 	Début de la partie main
    +++++++++++++++++++++++ */
-main {background-color: var(--bck-article);}
+main {
+	background-color: var(--bck-article);
+	padding-top: 3.75rem;
+}
 
 .colonne {
 	width: 31.65%;
