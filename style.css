@@ -38,6 +38,7 @@
 	--color-text :		 #a1b1bc;
 	--color-secondary :	 #1abc9c;
 	--color-border :	 #ecf0f1;
+	--color-border-2: 	 #39444E;
 	--color-white :		 white;
 	--color-blue : 		 #21c2f8;
 
@@ -500,6 +501,7 @@ article {
 	background-color: var(--bck-footer);
 	height: 6.25rem;
 	margin-top: 5.75rem;
+	border-top: 1px solid var(--color-border-2);
 }
 
 #bg-color div p{
