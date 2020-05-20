@@ -1,6 +1,4 @@
-$(".fa-heart").on('click', function(event){
-    // event.stopPropagation();
-    // event.stopImmediatePropagation();
+$(".fa-heart").on('click', function(){
     let cpt = $(this).next().text();
 
     if (this.className == 'far fa-heart') { //like
