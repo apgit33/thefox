@@ -259,11 +259,17 @@ main {
 }
 
 .colonne {
+	width: 370px;
+	/* min-width: 23.125rem; */
+}.colonne2 {
 	width: 31.65%;
-	min-width: 23.125rem;
+	/* min-width: 23.125rem; */
 }
-
+.groupe {
+	width: 66%;
+}
 article {
+	/* width: 370px; */
 	border: 0.0625rem solid var(--color-border);
 	margin-top: 1.875rem;
 	background-color: var(--color-white);
@@ -361,24 +367,23 @@ article {
 		margin-top: -4.9375rem;
 		font-size: var(--size-text-secondary);
 		top: -9.625rem;
-		left: 18.5rem;
+		float: right;
+		margin-right: 1.25rem;
 		color: var(--color-white);
 	}
 	.show .fa-chevron-left {
-		top: -4.125rem;
-		left: -0.0625rem;
+		top: -8.9375rem;
 	}
 	.show .fa-chevron-right {
-		top: -6.3125rem;
-		left: 18.8125rem;
+		float: right;
+		top: -10.8125rem;
 	}
 
 /* Hover Style */
 	.hover-style {
-		width: 20.625rem;
-		height: 15.625rem;
 		background-color: #555761;
 		text-align: center;
+		padding-bottom: 2.5rem;
 	}
 
 	.circle{
@@ -387,7 +392,7 @@ article {
 		height: 2.5rem;
 		font-size: 1rem;
 		border: 0.0625rem solid var(--color-white);
-		margin-top: 4.3125rem;
+		margin-top: 3.75rem;
 		border-radius: 2.5rem;
 		color: var(--color-white);
 		line-height: 2.5rem;
@@ -426,15 +431,12 @@ article {
 /* Slideshow grand */
 	.grand-slide .fa-expand-alt {
 		top: -19.0625rem;
-		left: 18.5rem;
 	}
 	.grand-slide .fa-chevron-left {
-		top: -9.6875rem;
-		left: -0.0625rem;
+		top: -13.625rem;
 	}
 	.grand-slide .fa-chevron-right {
-		top: -11.5625rem;
-		left: 18.8125rem;
+		top: -15.5rem;
 	}
 
 /* Only-text hover */
@@ -545,13 +547,40 @@ footer hr{
 .learn-more{
 	font-family: var(--font-title-black);
 }
+.show img , iframe{
+	width: 100%;
+}
 
 /* *****************************************************
 Début media queries
 ***************************************************** */
 
 @media only screen and (max-width :1179px) {
+	.column-m {
+		/* background-color: var(--color-main); */
+		flex-direction: column;
+		/* flex-wrap: wrap; */
+	
+	}
+	.groupe {
+		width: 100%;
+		justify-content: space-around;		
+	}
+	.colonne {
+		/* background-color: var(--color-text); */
+		/* display: flex; */
+		/* flex-wrap: wrap; */
+		/* flex-direction: column; */
+		/* width: 100%;
+		justify-content: space-around; */
+	}
+	article {
+		/* width: 40%; */
+	}
 
+	.fa-chevron-right {
+		/* float: right; */
+	}
 }
 
 @media screen and (max-width:991.8896px) { 
