@@ -130,7 +130,7 @@ iframe {border: none;} /* bordure des vidéos* /
 h1{
 	font-family: var(--font-principal);
 	font-size: var(--size-title);
-	color:var(--bck-principal);
+	color:var(--color-main);
 	font-weight: 100;
 	margin: 2.8125rem 0;
 }
@@ -544,4 +544,27 @@ footer hr{
 }
 .learn-more{
 	font-family: var(--font-title-black);
+}
+
+/* *****************************************************
+Début media queries
+***************************************************** */
+
+@media only screen and (max-width :1179px) {
+
+}
+
+@media screen and (max-width:991.8896px) { 
+
+
+}
+
+@media screen and (max-width:767.9808px) {
+
+
+}
+
+@media screen and (max-width:479.9808px){ 
+
+
 }
