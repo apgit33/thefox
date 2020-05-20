@@ -76,8 +76,8 @@
 
     <main>
         <div class="container">
-            <div class="d-flex between column-m">
-                <div class="d-flex between groupe">
+            <div class="d-flex between column-media">
+                <div class="d-flex between groupe column-mobile">
                     <!-- +++++++++++++++++++++++++
                     Premiere colonne du main
                     +++++++++++++++++++++++++ -->
@@ -125,7 +125,7 @@
                             <div class="interieur">
                                 <header>
                                     <div class="r-cadre">
-                                        <h2>You May Be Losing Users If Responsive Web Design Is Your Only Mobile<span class="fas fa-link r-link"></span></h2>
+                                        <h2>You May Be Losing Users If Responsive Web Design Is Your Only Mobile<span class="fas fa-link r-link no-media"></span></h2>
                                         
                                         <p><a href="http://tranmautritam.com" class="tran">http://tranmautritam.com</a></p>
                                     </div>
@@ -138,14 +138,14 @@
                         </article>
     
                         <!-- Slideshow Post Style -->
-                        <article>
+                        <article class="slideshow">
                             <div class="interieur">
                                 <header>
                                     <p class="show">
                                         <img src="img/slide.png" alt="blog écrit en lettre" width="330" height="250">
-                                        <a href="#"><span class="fas fa-expand-alt"></span></a>    
-                                        <a href="#"><span class="fas fa-chevron-left"></span></a>    
-                                        <a href="#"><span class="fas fa-chevron-right"></span></a>
+                                        <span class="fas fa-expand-alt"></span>    
+                                        <span class="fas fa-chevron-left"></span>    
+                                        <span class="fas fa-chevron-right"></span>
                                     </p>
     
                                     <h2>Slideshow Post Style</h2>
@@ -184,7 +184,7 @@
                     +++++++++++++++++++++++++ -->
                     <div class="colonne">
                         <!-- Vimeo Video Post -->
-                        <article>
+                        <article class="vimeo">
                             <div class="interieur">
     
                                 <header>
@@ -292,133 +292,141 @@
                 <!-- +++++++++++++++++++++++++
                 Troisieme colonne du main
                 +++++++++++++++++++++++++ -->
-                <div class="colonne2">
-                    <!-- Slideshow Post Style -->
-                    <article>
-                        <div class="interieur">
-                            <header>
-                                <p class="show grand-slide">
-                                    <img src="img/slideshow.png" alt="pellicule photo" width="330" height="400">
-                                    <a href="#"><span class="fas fa-expand-alt"></span></a>    
-                                    <a href="#"><span class="fas fa-chevron-left"></span></a>    
-                                    <a href="#"><span class="fas fa-chevron-right"></span></a>
-                                </p>
-                                <h2>Slideshow Post Style</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
-                            </header>
-
-                            <!-- partie principale de l'article -->
-                            <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
-            
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
-                        </div>
-                    </article>
-
-                    <!-- Audio Post Style -->
-                    <article>
-                        <div class="interieur">
-                            <header>
-                                <audio controls>
-                                    <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <h2>Audio Post Style</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
-                            </header>
-
-                            <!-- partie principale de l'article -->
-                            <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
-            
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
-                        </div>
-                    </article>
-
-                    <!-- Only Text - Hover Style -->
-                    <article class="only-text">   
-                        <div class="interieur">
-                            <header>
-                                <h2>Only Text - Hover Style</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Creative and Design</span></a></p>
-                            </header>
-                            
-                            <!-- partie principale de l'article -->
-                            <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...</p>                       
+                <div class="colonne last-co">
+                    <div class="d-flex-media column-mobile">
+                        <div>
+                            <!-- Slideshow Post Style -->
+                            <article class="slideshow">
+                                <div class="interieur">
+                                    <header>
+                                        <p class="show grand-slide">
+                                            <img src="img/slideshow.png" alt="pellicule photo" width="330" height="400">
+                                            <span class="fas fa-expand-alt"></span>
+                                            <span class="fas fa-chevron-left"></span>
+                                            <span class="fas fa-chevron-right"></span>
+                                        </p>
+                                        <h2>Slideshow Post Style</h2>
+                                        <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
+                                    </header>
+        
+                                    <!-- partie principale de l'article -->
+                                    <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
                     
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
+                                    <footer>
+                                        <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                    </footer>
+                                </div>
+                            </article>
+        
+                            <!-- Audio Post Style -->
+                            <article>
+                                <div class="interieur">
+                                    <header>
+                                        <audio controls>
+                                            <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                        <h2>Audio Post Style</h2>
+                                        <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
+                                    </header>
+        
+                                    <!-- partie principale de l'article -->
+                                    <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
+                    
+                                    <footer>
+                                        <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                    </footer>
+                                </div>
+                            </article>
                         </div>
-                    </article>
+    
+                        <div>
+                            <!-- Only Text - Hover Style -->
+                            <article class="only-text">   
+                                <div class="interieur">
+                                    <header>
+                                        <h2>Only Text - Hover Style</h2>
+                                        <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Creative and Design</span></a></p>
+                                    </header>
+                                    
+                                    <!-- partie principale de l'article -->
+                                    <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...</p>                       
+                            
+                                    <footer>
+                                        <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                    </footer>
+                                </div>
+                            </article>
+        
+                            <!-- Vimeo Video Post -->
+                            <article class="vimeo">
+                                <div class="interieur">
+                                    <header>
+                                        <iframe src="https://player.vimeo.com/video/38584262" width="330" height="250" allow="autoplay; fullscreen" allowfullscreen title=""></iframe>
+                                        <h2>Vimeo Video Post</h2>
+                                        <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
+                                    </header>
+                    
+                                    <!-- partie principale de l'article -->
+                                    <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
+                        
+                                    <footer>
+                                        <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                    </footer>
+                                </div>                
+                            </article>
+                        </div>
+                    </div>
 
-                    <!-- Vimeo Video Post -->
-                    <article>
-                        <div class="interieur">
-                            <header>
-                                <iframe src="https://player.vimeo.com/video/38584262" width="330" height="250" allow="autoplay; fullscreen" allowfullscreen title=""></iframe>
-                                <h2>Vimeo Video Post</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
-                            </header>
-            
-                            <!-- partie principale de l'article -->
-                            <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa...</p>
+                    <div class="d-flex-media column-mobile">
+                        <!-- Slideshow Post Style -->
+                        <article class="slideshow">
+                            <div class="interieur">
+                                <header>
+                                    <p class="show">
+                                        <img src="img/slide2.png" alt="blog écrit en lettre" width="330" height="250">
+                                        <span class="fas fa-expand-alt"></span>
+                                        <span class="fas fa-chevron-left"></span>
+                                        <span class="fas fa-chevron-right"></span>
+                                    </p>
+                                    <h2>Slideshow Post Style</h2>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
+                                </header>
+    
+                                <!-- partie principale de l'article -->
+                                <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet...</p>
                 
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
-                        </div>                
-                    </article>
-
-                    <!-- Slideshow Post Style -->
-                    <article>
-                        <div class="interieur">
-                            <header>
-                                <p class="show">
-                                    <img src="img/slide2.png" alt="blog écrit en lettre" width="330" height="250">
-                                    <a href="#"><span class="fas fa-expand-alt"></span></a>    
-                                    <a href="#"><span class="fas fa-chevron-left"></span></a>    
-                                    <a href="#"><span class="fas fa-chevron-right"></span></a>
-                                </p>
-                                <h2>Slideshow Post Style</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
-                            </header>
-
-                            <!-- partie principale de l'article -->
-                            <p class="text-main">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet...</p>
-            
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
-                        </div>
-                    </article>
-
-                    <!-- Audio Post Style -->
-                    <article>
-                        <div class="interieur">
-                            <header>
-                                <audio controls>
-                                    <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                    </audio>
-                                <h2>Audio Post Style</h2>
-                                <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
-                            </header>
-
-                            <footer>
-                                <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
-                            </footer>
-                        </div>
-                    </article>
+                                <footer>
+                                    <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                </footer>
+                            </div>
+                        </article>
+    
+                        <!-- Audio Post Style -->
+                        <article class="audio-post">
+                            <div class="interieur">
+                                <header>
+                                    <audio controls>
+                                        <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                        </audio>
+                                    <h2>Audio Post Style</h2>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
+                                </header>
+    
+                                <footer>
+                                    <p class="article-footer"><span class="far fa-comments"></span>24 Comments <span class="barre">|</span> <span class="far fa-calendar-alt"></span>24 July,2017 <span class="barre">|</span> <span class="far fa-heart"></span><span class="number">124</span> Likes</p>
+                                </footer>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
             <div class="d-flex between main-footer">
                 <p class="main-footer-text">Showing 16 of 256 Archives on <span class="vert">Masonry Blog</span>.</p>
 
                 <!-- Icone de pagination -->
-                <div class="d-flex pagination between">
+                <div class="d-flex pagination">
                     <p class="pagination-icon"><a href="#"><span class="fas fa-home"></span></a></p>
                     <p class="pagination-icon"><a href="#"><span class="fas fa-angle-left"></span></a></p>
                     <p class="pagination-icon"><a href="#"><span class="fas fa-angle-right"></span></a></p>
