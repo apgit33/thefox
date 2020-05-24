@@ -147,6 +147,9 @@ main h2 {
 
 
 /* Menu  */
+#cmdmenu { 
+    display:none;
+  }
 nav a{
 	font-size: var(--size-text-secondary);
 	color:var(--color-text);
@@ -161,6 +164,7 @@ nav a:hover{
 	border-width: 0.1875rem;
 	color: var(--color-secondary);
 }
+
 
 #nav-pages p span{
 	line-height: 0rem;
@@ -180,9 +184,9 @@ nav a:hover{
 }
 
 
-#mycart{
+.mycart{
 	margin-left: 35rem;
-	width: 6.5625rem;
+	width: 5.6rem;
 	height: 1.875rem;
 	border: solid 0.1rem;
 	border-color: rgba(161 177 188 / 20%);	
@@ -551,20 +555,330 @@ Début media queries
 ***************************************************** */
 
 @media only screen and (max-width :1179px) {
-
+	/* header ********************************************************/
+	header .border-deco-header{
+        max-width: 1179px;
+	}
+	header .d-flex{
+		max-width: 1100px;
+	}
+	
+	/* footer ********************************************************/
+	footer .container{
+		max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+	}
 }
 
 @media screen and (max-width:991.8896px) { 
+	/* header ********************************************************/
+	header .border-deco-header{
+        max-width: 991px;
+      
+	}
+	header .d-flex{
+		max-width: 940px;
+	}
 
+	/* Menu  ***********/
+	#lemenu{
+		position: fixed;
+		right :1rem;
+		top: 7rem; 
+		
+	}
+	#lemenu ul{
+		flex-direction:column;
+		align-items:end;
+		margin: 4rem 0;
+		background-color: var(--color-main);
+		border-radius: 5px;
+		width: 6rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 
+	}
+	#lemenu a{
+		border-top: none;
+		text-transform: uppercase;
+	}
+	#lemenu li{
+		margin-bottom: 0.3rem;
+		margin-right: 1rem;
+	}
+	#lemenu > a:hover {	
+		color:var(--color-secondary);	
+	}
+
+	/* button menu burger */
+	#cmdmenu { 
+		display:block;
+	}
+	#cmdmenu { 
+		position :fixed; 
+		top : 8.2rem; 
+		right :1rem; 
+		z-index :50;
+		padding:5px 8px; 
+		color:#fff;
+		background-color: var(--color-secondary);
+		border-radius:5px;
+		cursor:pointer;
+	}
+	#cmdmenu:hover {	
+		background: var(--color-main); 
+		color: white;	
+		border: solid 1px white;
+	}
+	 
+	
+	/* footer ********************************************************/
+	footer .container{
+		max-width: 940px;
+        margin-right: auto;
+        margin-left: auto;
+	}
+	
+
+	#footer-enf1, #footer-enf3, #footer-enf3, #footer-enf4{
+		width: 20%;
+	}
+	
+	.border-top-deco{
+		width: 98%;
+		border-top: solid 0.1rem;
+		border-color: rgba(161 177 188 / 20%);	
+	}
+	#bg-color{
+		background-color: var(--bck-footer);
+		height: 6.25rem;
+		margin-top: 1.8rem;
+		border-top: 0.0625rem solid var(--color-border-2);
+	}
 }
 
 @media screen and (max-width:767.9808px) {
+	/* header ********************************************************/
+	header .border-deco-header{
+        max-width: 767px;
+      
+	}
+	header .d-flex{
+		max-width: 740px;
+	}
 
+	/* Menu  ***********/
+	#lemenu{
+		position: fixed;
+		right :1rem;
+		top: 7rem; 
+		
+	}
+	#lemenu ul{
+		flex-direction:column;
+		align-items:end;
+		margin: 4rem 0;
+		background-color: var(--color-main);
+		border-radius: 5px;
+		width: 6rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 
+	}
+	#lemenu a{
+		border-top: none;
+		text-transform: uppercase;
+	}
+	#lemenu li{
+		margin-bottom: 0.3rem;
+		margin-right: 1rem;
+	}
+	#lemenu > a:hover {	
+		color:var(--color-secondary);	
+	}
+
+	/* button menu burger */
+	#cmdmenu { 
+		display:block;
+	}
+	#cmdmenu { 
+		position :fixed; 
+		top : 8.2rem; 
+		right :1rem; 
+		z-index :50;
+		padding:5px 8px; 
+		color:#fff;
+		background-color: var(--color-secondary);
+		border-radius:5px;
+		cursor:pointer;
+	}
+	#cmdmenu:hover {	
+		background: var(--color-main); 
+		color: white;	
+		border: solid 1px white;
+	}
+	 
+	
+	/* footer ********************************************************/
+	footer .container{
+		max-width: 740px;
+        margin-right: auto;
+        margin-left: auto;
+	}
+	
+
+	#footer-enf1, #footer-enf3, #footer-enf3, #footer-enf4{
+		width: 20%;
+	}
+	
+	.border-top-deco{
+		width: 98%;
+		border-top: solid 0.1rem;
+		border-color: rgba(161 177 188 / 20%);	
+	}
+	#bg-color > .d-flex{
+		flex-direction: column;
+	}
+	#bg-color > .d-flex >.mr-top3 > ul{
+		margin-top: 0;	
+	}
+	#bg-color{
+		background-color: var(--bck-footer);
+		border-top: 0.0625rem solid var(--color-border-2);
+	}
+	#footer-part1{
+		background-color: var(--bck-principal);
+		height : 35rem;
+	}
+	div .source {
+		margin-top: 2rem;
+	}
+
+	#bg-color div > ul{
+		margin-top: 0;
+	}
 }
 
 @media screen and (max-width:479.9808px){ 
+	/* header ********************************************************/
+	header .border-deco-header{
+		max-width: 479px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	header > div:nth-child(1){
+		flex-direction: column;
+	}
+	header > div > p{
+		flex-direction: column;
+	}
+	header .d-flex{
+		max-width: 460px;
+		
+	}
+	header ul {
+		margin-top: 1rem;
+	}
+	#nav-pages{
+		display: none;
+	}
+	/* Menu  ***********/
+	#lemenu{
+		position: fixed;
+		right :1rem;
+		top: 7rem; 
+		
+	}
+	#lemenu ul{
+		flex-direction:column;
+		align-items:end;
+		margin: 4rem 0;
+		background-color: var(--color-main);
+		border-radius: 5px;
+		width: 6rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 
+	}
+	#lemenu a{
+		border-top: none;
+		text-transform: uppercase;
+	}
+	#lemenu li{
+		margin-bottom: 0.3rem;
+		margin-right: 1rem;
+	}
+	#lemenu > a:hover {	
+		color:var(--color-secondary);	
+	}
+
+	/* button menu burger */
+	#cmdmenu { 
+		display:block;
+	}
+	#cmdmenu { 
+		position :fixed; 
+		top : 8.2rem; 
+		right :1rem; 
+		z-index :50;
+		padding:10px 14px; 
+		color:#fff;
+		background-color: var(--color-secondary);
+		border-radius:5px;
+		cursor:pointer;
+	}
+	#cmdmenu:hover {	
+		background: var(--color-main); 
+		color: white;	
+		border: solid 1px white;
+	}
+	 
+	
+	/* footer ************ ********************************************/
+	footer .container{
+		max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+	}
+	
+
+	#footer-enf1, #footer-enf2, #footer-enf3, #footer-enf4{
+		width: 90%;
+	}
+	
+	.border-top-deco{
+		width: 90%;
+		border-top: solid 0.1rem;
+		border-color: rgba(161 177 188 / 20%);	
+	}
+	#bg-color > .d-flex{
+		flex-direction: column;
+	}
+	#bg-color > .d-flex >.mr-top3 > ul{
+		margin-top: 0;	
+	}
+	#bg-color{
+		background-color: var(--bck-footer);
+		border-top: 0.0625rem solid var(--color-border-2);
+	}
+	footer #footer-part1 div{
+		flex-direction: column;
+		align-items: center;
+		background-color: var(--bck-principal);
+	}
+	footer #footer-part1 h2{
+		margin-top: 1rem;
+		
+	}
+	div .source {
+		margin-top: 2rem;
+		margin-left: auto;
+		margin right: auto;
+	}
+
+	#bg-color div > ul{
+		margin-top: 0;
+	}
 
 }
