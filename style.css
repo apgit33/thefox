@@ -651,6 +651,12 @@ Début media queries
 
 	.main-footer {justify-content: space-around;}
 	.pagination {width: 40%;}
+	.article-footer {
+		width: 72%;
+		line-height: 30px; 
+		margin: auto ;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width:991.8896px) { 
@@ -670,11 +676,7 @@ Début media queries
 		text-align: center;
 		padding: 0;}
 	.read {margin: auto;}
-	.article-footer {
-		width: 80%;
-		line-height: 30px; 
-		margin: auto ;
-	}
+
 	article {width: 100%;}
 
 	.main-footer {
