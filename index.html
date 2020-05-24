@@ -322,10 +322,22 @@
                             <article>
                                 <div class="interieur">
                                     <header>
-                                        <audio controls>
-                                            <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
+                                        <div class="topaudio d-flex">
+                                            <div class="lecteur d-flex">
+                                                <audio id="audioPlayerA" ontimeupdate="update(this)">                                   
+                                                    <source src="media/test.mp3">Your browser does not support the audio element.   
+                                                </audio>
+                                                <span id="statusA" class="fas fa-play status"></span>
+                                                <span  id="timeA" class="progressTime">0:00</span>
+                                                <div class="progressBar">
+                                                    <span id="progressA" class="progress"></span>
+                                                </div>
+                                                <span id="vlmA" class="fas fa-volume-up vlm"></span>
+                                                <span id="vlm-conA" class="volume-slider-con">
+                                                    <div id="vlm-sliderA" class="volume-slider"></div>
+                                                </span>
+                                            </div>
+                                        </div>                          
                                         <h2>Audio Post Style</h2>
                                         <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
                                     </header>
@@ -406,10 +418,23 @@
                         <article class="audio-post">
                             <div class="interieur">
                                 <header>
-                                    <audio controls>
-                                        <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                        </audio>
+                                    <div class="topaudio d-flex">
+                                        <div class="lecteur d-flex">
+                                            <audio id="audioPlayerB" ontimeupdate="update(this)">                                   
+                                                <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3">
+                                                Your browser does not support the audio element.   
+                                            </audio>
+                                            <span id="statusB" class="fas fa-play status"></span>
+                                            <span  id="timeB" class="progressTime">0:00</span>
+                                            <div class="progressBar">
+                                                <span id="progressB" class="progress"></span>
+                                            </div>
+                                            <span id="vlmB" class="fas fa-volume-up vlm"></span>
+                                            <span id="vlm-conB" class="volume-slider-con">
+                                                <div id="vlm-sliderB" class="volume-slider"></div>
+                                            </span>
+                                        </div>
+                                    </div>
                                     <h2>Audio Post Style</h2>
                                     <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Music</span></a></p>
                                 </header>
