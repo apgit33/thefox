@@ -469,3 +469,61 @@ footer hr{
 	margin-left: 0;
 	margin-top: 3px;
 }
+
+.topaudio {
+	height: 90px;	
+	background-color: var(--color-text);
+	color: var(--color-white);
+	justify-content: space-around;
+
+	align-items: center;
+}
+.lecteur {
+	width: 85%;
+	justify-content: space-around;
+
+}
+
+.vlm {width: 18px;
+	margin-top: 1px;
+}
+
+.volume-slider-con{
+	height:10px;
+	width:50px;
+	background-color:var(--color-white);
+	margin: auto 0;
+
+  }
+.volume-slider{
+	height:100%;
+	width:100%;
+	background-color:#00FFCD;
+}
+.progress-slider-con{
+height:10px;
+width:50px;
+background-color:var(--color-white);
+margin: auto 0;
+
+}
+
+.progressBar {
+	background-color: var(--color-white);
+	width:75px; 
+	height:10px;
+	margin: auto 0;
+ }
+ .progress {
+	background-color:var(--color-main); 
+	height:10px;
+	display:inline-block;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+.progressTime{
+	font-family: var(--font-principal);
+	font-size: var(--size-text);
+
+}
