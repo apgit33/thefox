@@ -608,10 +608,15 @@ footer h2{
 	font-size: var(--size-text-12);
 	margin-top: 0.3rem;
 }
-footer hr{
-	color: var(--color-secondary);
+
+.footer-footer h2::after {
+	display: block;
+	content: '';
+	height: 0.125rem;
 	width: 4.4375rem;
-	margin-left: 0;
+	margin-top: 0.4375rem;
+	background-color: var(--color-secondary);
+
 }
 .border-top-deco{
 	border-top: solid 0.1rem;
@@ -627,6 +632,7 @@ footer hr{
 .top-header {
 	width: 75%;
 }
+
 
 /* *****************************************************
 Début media queries
