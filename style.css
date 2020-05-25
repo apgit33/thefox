@@ -588,6 +588,7 @@ article {
 	width: 89%;
 }
 .source {
+	margin: 1.875rem 0;
 	font-size: var(--size-text-15);
 }
 
@@ -1016,22 +1017,22 @@ Début media queries
 }
 
 @media screen and (max-width : 21.5625rem) {
-.header-1 .top-header{
-	flex-direction: column;
-	min-width: 21.625rem;
-}
-.header-1{
-	min-width: 18.75rem;
-}
-#cmdmenu { 
-	position :fixed; 
-	top : 10.2rem; 
-	right :1rem; 
-	z-index :50;
-	padding:0.625rem 0.875rem; 
-	color:#fff;
-	background-color: var(--color-secondary);
-	border-radius:0.3125rem;
-	cursor:var(--cursor);
-}
+	.header-1 .top-header{
+		flex-direction: column;
+		min-width: 21.625rem;
+	}
+	.header-1{
+		min-width: 18.75rem;
+	}
+	#cmdmenu { 
+		position :fixed; 
+		top : 10.2rem; 
+		right :1rem; 
+		z-index :50;
+		padding:0.625rem 0.875rem; 
+		color:#fff;
+		background-color: var(--color-secondary);
+		border-radius:0.3125rem;
+		cursor:var(--cursor);
+	}
 }
