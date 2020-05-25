@@ -112,6 +112,7 @@
 	}
 
 body {margin: 0;}
+
 .container {
 	max-width: 73.125rem;
 	margin: 0 auto;
@@ -183,10 +184,11 @@ nav a:hover{
 	box-shadow: 0rem 0.3125rem 0.625rem 0rem rgba(0,0,0,0.1);
 }
 
-
+.top-header{
+	max-width: 73.125rem;
+	width: 100%;
+} 
 .mycart{
-	/* margin-left: 35rem; */
-	/* margin-right: 50px; */
 	width: 5.6rem;
 	height: 1.875rem;
 	border: solid 0.1rem;
@@ -643,13 +645,31 @@ Début media queries
 	header .border-deco-header{
         max-width: 1179px;
 	}
-	/* .top-header{
-		max-width: 1100px;
-	} */
 	
-	/* .mycart {
-		width: 10%;
-	} */
+	.border-deco-header .container{
+		max-width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	.top-header{
+		max-width: 73.125rem;
+		width: 100%;
+	
+	} 
+	.mycart{
+		width: 5.6rem;
+		height: 1.875rem;
+		border: solid 0.1rem;
+		border-color: rgba(161 177 188 / 20%);	
+	}
+	.langages{
+		max-width: 100%;
+		margin-left: 1.5rem;
+	}
+	.blog{
+		max-width: 95%;
+	}
 	/* footer ********************************************************/
 	footer .container{
 		max-width: 1100px;
@@ -688,17 +708,70 @@ Début media queries
 	}
 }
 
-@media screen and (max-width:991.8896px) { 
-	/* header ********************************************************/
-	 header .border-deco-header{
-        max-width: 991px;
-      
+@media screen and (max-width:1154px) { 
+	/* Menu  ***********/
+	#lemenu{
+		position: fixed;
+		right :1rem;
+		top: 7rem; 
+		
+	}
+	#lemenu ul{
+		flex-direction:column;
+		align-items:end;
+		margin: 4rem 0;
+		background-color: var(--color-main);
+		border-radius: 5px;
+		width: 6rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	
+	}
+	#lemenu a{
+		border-top: none;
+		text-transform: uppercase;
+	}
+	#lemenu li{
+		margin-bottom: 0.3rem;
+		margin-right: 1rem;
+	}
+	#lemenu > a:hover {	
+		color:var(--color-secondary);	
 	}
 	
-	header .d-flex{
-		max-width: 940px;
+	/* button menu burger */
+	#cmdmenu { 
+		display:block;
 	}
+	#cmdmenu { 
+		position :fixed; 
+		top : 5.5rem; 
+		right :1rem; 
+		z-index :50;
+		padding:7px 10px; 
+		color:#fff;
+		background-color: var(--color-secondary);
+		border-radius:5px;
+		cursor:pointer;
+	}
+	#cmdmenu:hover {	
+		background: var(--color-main); 
+		color: white;	
+		border: solid 1px white;
+	}
+}
 
+@media screen and (max-width:991.8896px) { 
+	/* header ********************************************************/
+	
+	header .border-deco-header{
+        max-width: 61.9375rem;
+	}
+	
+	.top-header{
+		max-width: 56.25rem;
+	} 
+	
 	/* Menu  ***********/
 	#lemenu{
 		position: fixed;
@@ -735,10 +808,10 @@ Début media queries
 	}
 	#cmdmenu { 
 		position :fixed; 
-		top : 8.2rem; 
+		top : 5.5rem; 
 		right :1rem; 
 		z-index :50;
-		padding:5px 8px; 
+		padding:7px 10px; 
 		color:#fff;
 		background-color: var(--color-secondary);
 		border-radius:5px;
@@ -779,18 +852,21 @@ Début media queries
 	/* header *******************************************************/
 	header .border-deco-header{
         max-width: 767px;
-      
 	}
-	header .d-flex{
-		max-width: 740px;
+	.header-1{
+		flex-direction: column;
 	} 
-
+	.mycart{
+		margin-right: 1rem;
+	}
+	.header-1 ul{
+		margin-bottom: 1rem;
+	}
 	/* Menu  ********** */
 	#lemenu{
 		position: fixed;
 		right :1rem;
-		top: 7rem; 
-		
+		top: 7rem; 	
 	}
 	#lemenu ul{
 		flex-direction:column;
@@ -821,10 +897,10 @@ Début media queries
 	}
 	#cmdmenu { 
 		position :fixed; 
-		top : 8.2rem; 
+		top : 7.5rem; 
 		right :1rem; 
 		z-index :50;
-		padding:5px 8px; 
+		padding:7px 10px; 
 		color:#fff;
 		background-color: var(--color-secondary);
 		border-radius:5px;
@@ -886,6 +962,7 @@ Début media queries
 	/* header ********************************************************/
 	header .border-deco-header{
 		max-width: 479px;
+		min-width: 360px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -895,15 +972,20 @@ Début media queries
 	header > div > p{
 		flex-direction: column;
 	}
-	header .d-flex{
-		max-width: 460px;
-		
-	}
+	
 	header ul {
 		margin-top: 1rem;
 	}
 	#nav-pages{
 		display: none;
+	}
+	.blog{
+		flex-direction: column;
+		min-width: 360px;
+	}
+	.logo_menu{
+		min-width: 346px;
+	
 	}
 	/* Menu  ***********/
 	 #lemenu{
@@ -1028,5 +1110,26 @@ Début media queries
 
 @media screen and (max-width : 332.9808px) {
 	article {width: 100%;}
+}
 
+
+@media screen and (max-width : 345px) {
+.header-1 .top-header{
+	flex-direction: column;
+	min-width: 346px;
+}
+.header-1{
+	min-width: 300px;
+}
+#cmdmenu { 
+	position :fixed; 
+	top : 10.2rem; 
+	right :1rem; 
+	z-index :50;
+	padding:10px 14px; 
+	color:#fff;
+	background-color: var(--color-secondary);
+	border-radius:5px;
+	cursor:pointer;
+}
 }
