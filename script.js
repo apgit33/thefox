@@ -239,24 +239,24 @@ var volumeClass=document.querySelector('#vlmB');
 // "use strict";
 window.addEventListener("DOMContentLoaded", (event) => {
   /* MENU */
-  const leMenu = document.getElementById("lemenu");
+  const lemenu = document.getElementById("lemenu");
   const cmdmenu = document.getElementById("cmdmenu");
   cmdmenu.addEventListener('click',function(){
-    leMenu.style.display = (leMenu.style.display == 'none')? '':'none';
+    lemenu.style.display = (lemenu.style.display == 'none')? '':'none';
   });
   // au chargement de la page
   window.onload = function(){
     // on teste la largeur de la fenêtre
     var ww = window.innerWidth; // en pixels
-    leMenu.style.display = ( ww > 991 )? '':'none';
-    cmdmenu.style.display = ( ww > 991 )? 'none':'';
+    lemenu.style.display = ( ww > 1154 )? '':'none';
+    cmdmenu.style.display = ( ww > 1154 )? 'none':'';
   };
   // au redimensionnement de la fenêtre
   window.onresize = function(){
     // on teste la largeur de la fenêtre
     var ww = window.innerWidth; // en pixels
-    leMenu.style.display = ( ww > 991 )? '':'none';
-    cmdmenu.style.display = ( ww > 991 )? 'none':'';
+    lemenu.style.display = ( ww > 1154 )? '':'none';
+    cmdmenu.style.display = ( ww > 1154 )? 'none':'';
   };
 
 });
