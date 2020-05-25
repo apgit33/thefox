@@ -266,7 +266,7 @@ main {
 }
 
 .colonne {
-	width: 370px;
+	width: 23.125rem;
 }
 
 .groupe {
@@ -468,7 +468,7 @@ article {
 
 		/* lecteur audio */
 			.topaudio {
-				height: 90px;	
+				height: 5.625rem;	
 				background-color: var(--color-text);
 				color: var(--color-white);
 				justify-content: space-around;
@@ -481,13 +481,13 @@ article {
 
 			}
 
-			.vlm {width: 18px;
-				margin-top: 1px;
+			.vlm {width: 1.125rem;
+				margin-top: 0.0625rem;
 			}
 
 			.volume-slider-con{
-				height:10px;
-				width:50px;
+				height:0.625rem;
+				width:3.125rem;
 				background-color:var(--color-white);
 				margin: auto 0;
 
@@ -501,17 +501,17 @@ article {
 
 			.progressBar {
 				background-color: var(--color-white);
-				width:75px; 
-				height:10px;
+				width:4.6875rem; 
+				height:0.625rem;
 				margin: auto 0;
 			}
 			.progress {
 				background-color:var(--color-main); 
-				height:10px;
+				height:0.625rem;
 				display:inline-block;
-				margin-bottom: 5px;
+				margin-bottom: 0.3125rem;
 				position: relative;
-				margin-right: 80px;
+				margin-right: 5rem;
 			}
 
 			.progressTime{
@@ -561,7 +561,7 @@ article {
 	.pagination-icon:hover a {color: var(--color-secondary);}
 
 	.pagination p:nth-child(2) {
-		margin: auto 10px;
+		margin: auto 0.625rem;
 	}
 	.show img , iframe{
 		max-width :	 100%;
@@ -631,10 +631,10 @@ footer hr{
 Début media queries
 ***************************************************** */
 
-@media only screen and (max-width :1179px) {
+@media only screen and (max-width :73.6875rem) {
 	/* header ********************************************************/
 	header .border-deco-header{
-        max-width: 1179px;
+        max-width: 73.6875rem;
 	}
 	
 	.border-deco-header .container{
@@ -675,7 +675,7 @@ Début media queries
 		flex-wrap: wrap;
 		width: 100%;
 	}
-	 article {width: 370px;}
+	 article {width: 23.125rem;}
 
 	.d-flex-media {
 		display: flex;
@@ -688,13 +688,13 @@ Début media queries
 	.pagination {width: 40%;}
 	.article-footer {
 		width: 72%;
-		line-height: 30px; 
+		line-height: 1.875rem; 
 		margin: auto ;
 		text-align: center;
 	}
 }
 
-@media screen and (max-width:1154px) { 
+@media screen and (max-width:72.125rem) { 
 	/* Menu  ***********/
 	#lemenu{
 		position: fixed;
@@ -707,7 +707,7 @@ Début media queries
 		align-items:end;
 		margin: 4rem 0;
 		background-color: var(--color-main);
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		width: 6rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
@@ -734,20 +734,20 @@ Début media queries
 		top : 5.5rem; 
 		right :1rem; 
 		z-index :50;
-		padding:7px 10px; 
+		padding:0.4375rem 0.625rem; 
 		color:#fff;
 		background-color: var(--color-secondary);
-		border-radius:5px;
-		cursor:pointer;
+		border-radius:0.3125rem;
+		cursor:var(--cursor);
 	}
 	#cmdmenu:hover {	
 		background: var(--color-main); 
 		color: white;	
-		border: solid 1px white;
+		border: solid 0.0625rem white;
 	}
 }
 
-@media screen and (max-width:991.8896px) { 
+@media screen and (max-width:61.9931rem) { 
 	/* header ********************************************************/
 	
 	header .border-deco-header{
@@ -770,7 +770,7 @@ Début media queries
 		align-items:end;
 		margin: 4rem 0;
 		background-color: var(--color-main);
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		width: 6rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
@@ -797,16 +797,16 @@ Début media queries
 		top : 5.5rem; 
 		right :1rem; 
 		z-index :50;
-		padding:7px 10px; 
+		padding:0.4375rem 0.625rem; 
 		color:#fff;
 		background-color: var(--color-secondary);
-		border-radius:5px;
-		cursor:pointer;
+		border-radius:0.3125rem;
+		cursor:var(--cursor);
 	}
 	#cmdmenu:hover {	
 		background: var(--color-main); 
 		color: white;	
-		border: solid 1px white;
+		border: solid 0.0625rem white;
 	}
 	 
 	
@@ -835,11 +835,11 @@ Début media queries
 	}
 }
 
-@media screen and (max-width:767.9808px) {
+@media screen and (max-width:47.9988rem) {
 	.column-mobile {flex-direction: column;}
 	/* header *******************************************************/
 	header .border-deco-header{
-        max-width: 767px;
+        max-width: 47.9375rem;
 	}
 	.header-1{
 		flex-direction: column;
@@ -861,7 +861,7 @@ Début media queries
 		align-items:end;
 		margin: 4rem 0;
 		background-color: var(--color-main);
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		width: 6rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
@@ -888,16 +888,16 @@ Début media queries
 		top : 7.5rem; 
 		right :1rem; 
 		z-index :50;
-		padding:7px 10px; 
+		padding:0.4375rem 0.625rem; 
 		color:#fff;
 		background-color: var(--color-secondary);
-		border-radius:5px;
-		cursor:pointer;
+		border-radius:0.3125rem;
+		cursor:var(--cursor);
 	}
 	#cmdmenu:hover {	
 		background: var(--color-main); 
 		color: white;	
-		border: solid 1px white;
+		border: solid 0.0625rem white;
 	}
 	 
 	/* main section */
@@ -911,12 +911,12 @@ Début media queries
 
 }
 
-@media screen and (max-width:479.9808px){ 
+@media screen and (max-width:29.9988rem){ 
 	
 	/* header ********************************************************/
 	header .border-deco-header{
-		max-width: 479px;
-		min-width: 360px;
+		max-width: 29.9375rem;
+		min-width: 22.5rem;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -935,10 +935,9 @@ Début media queries
 	}
 	.blog{
 		flex-direction: column;
-		min-width: 360px;
 	}
 	.logo_menu{
-		min-width: 346px;
+		min-width: 21.625rem;
 	
 	}
 	/* Menu  ***********/
@@ -953,7 +952,7 @@ Début media queries
 		align-items:end;
 		margin: 4rem 0;
 		background-color: var(--color-main);
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		width: 6rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
@@ -980,16 +979,16 @@ Début media queries
 		top : 8.2rem; 
 		right :1rem; 
 		z-index :50;
-		padding:10px 14px; 
+		padding:0.625rem 0.875rem; 
 		color:#fff;
 		background-color: var(--color-secondary);
-		border-radius:5px;
-		cursor:pointer;
+		border-radius:0.3125rem;
+		cursor:var(--cursor);
 	}
 	#cmdmenu:hover {	
 		background: var(--color-main); 
 		color: white;	
-		border: solid 1px white;
+		border: solid 0.0625rem white;
 	} 
 	 
 	/* main section */
@@ -1016,23 +1015,23 @@ Début media queries
 		}
 }
 
-@media screen and (max-width : 345px) {
+@media screen and (max-width : 21.5625rem) {
 .header-1 .top-header{
 	flex-direction: column;
-	min-width: 346px;
+	min-width: 21.625rem;
 }
 .header-1{
-	min-width: 300px;
+	min-width: 18.75rem;
 }
 #cmdmenu { 
 	position :fixed; 
 	top : 10.2rem; 
 	right :1rem; 
 	z-index :50;
-	padding:10px 14px; 
+	padding:0.625rem 0.875rem; 
 	color:#fff;
 	background-color: var(--color-secondary);
-	border-radius:5px;
-	cursor:pointer;
+	border-radius:0.3125rem;
+	cursor:var(--cursor);
 }
 }
