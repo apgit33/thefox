@@ -87,9 +87,25 @@ playerA.addEventListener("timeupdate", updateProgress, false);
 playerB.addEventListener("timeupdate", updateProgressB, false);
 
 function updateProgress() {
-    var progress = document.querySelector("#progressA");
+    var playerId = '#'+this.id;
+    // console.log(playerId);
+    
+    // var progress = document.querySelector("#progressA");
+    // console.log(progress);
+
+    var progress = document.querySelector('.'+$(this).siblings('.progressBar').children().attr('class'));
+    // console.log(progress);
+    
     var value = 0;
+    
     var status=document.querySelector('#statusA');
+    console.log(status);
+    
+   var test = document.querySelector('.'+$(this).siblings('.status').attr('class').className);
+   console.log(test);
+   
+    
+    
     if (playerA.currentTime > 0) {
        value = Math.floor((100 / playerA.duration) * playerA.currentTime);
     }
@@ -103,6 +119,9 @@ function updateProgress() {
 }
 
 function updateProgressB() {
+    console.log('b');
+    
+
     var progress = document.querySelector("#progressB");
     var value = 0;
     var status=document.querySelector('#statusB');
@@ -214,21 +233,22 @@ var volumeClass=document.querySelector('#vlmB');
         playerB.volume = percentage / 100;
 };
 
+
 // Menu ---------------------------------------------------
 
-"use strict";
+// "use strict";
 window.addEventListener("DOMContentLoaded", (event) => {
   /* MENU */
-  const lemenu = document.getElementById("lemenu");
+  const leMenu = document.getElementById("lemenu");
   const cmdmenu = document.getElementById("cmdmenu");
   cmdmenu.addEventListener('click',function(){
-    lemenu.style.display = (lemenu.style.display == 'none')? '':'none';
+    leMenu.style.display = (leMenu.style.display == 'none')? '':'none';
   });
   // au chargement de la page
   window.onload = function(){
     // on teste la largeur de la fenêtre
     var ww = window.innerWidth; // en pixels
-    lemenu.style.display = ( ww > 991 )? '':'none';
+    leMenu.style.display = ( ww > 991 )? '':'none';
     cmdmenu.style.display = ( ww > 991 )? 'none':'';
   };
   // au redimensionnement de la fenêtre
@@ -240,4 +260,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
   };
 
 });
-
