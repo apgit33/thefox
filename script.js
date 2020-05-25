@@ -72,84 +72,66 @@ $(".fa-volume-up").on('click', function(){
     }
 });
 
-
+// ************************************
 // Barre de progression pendant la lecture de l'audio
-//     ++++++++++++++++++++++++++++++++++++
-//     !!! Pas réussi à faire une seule fonction !!!
-//     ++++++++++++++++++++++++++++++++++++
+// ************************************
 
 
-var playerA = document.querySelector('#audioPlayerA');
-var playerB = document.querySelector('#audioPlayerB');
+// on récup tous les lecteurs audio présents dans un array
+const players = document.querySelectorAll('audio');
 
-
-playerA.addEventListener("timeupdate", updateProgress, false);
-playerB.addEventListener("timeupdate", updateProgressB, false);
+// pour chaque audio dans players, on ajoute un listener
+for(var i=0, iMax = players.length; i < iMax; i++) {
+   players[i].addEventListener("timeupdate", updateProgress, false);
+}
 
 function updateProgress() {
-    var playerId = '#'+this.id;
-    // console.log(playerId);
-    
-    // var progress = document.querySelector("#progressA");
-    // console.log(progress);
 
-    var progress = document.querySelector('.'+$(this).siblings('.progressBar').children().attr('class'));
-    // console.log(progress);
-    
+    var progress = document.querySelector('#'+$(this).siblings('.progressBar').children().attr('id'));
     var value = 0;
+    var status=document.querySelector('#'+$(this).siblings('.status').attr('id'));
     
-    var status=document.querySelector('#statusA');
-    console.log(status);
-    
-   var test = document.querySelector('.'+$(this).siblings('.status').attr('class').className);
-   console.log(test);
-   
-    
-    
-    if (playerA.currentTime > 0) {
-       value = Math.floor((100 / playerA.duration) * playerA.currentTime);
+    if (this.currentTime > 0) {
+       value = Math.floor((100 / this.duration) * this.currentTime);
     }
     
-    if (playerA.ended) {
+    if (this.ended) {
         status.className = 'fas fa-play status';
         value = 0;
-        document.querySelector('#timeA').textContent ='0:00';
-    }
-    progress.style.width = value + "%"; 
-}
-
-function updateProgressB() {
-    console.log('b');
-    
-
-    var progress = document.querySelector("#progressB");
-    var value = 0;
-    var status=document.querySelector('#statusB');
-    if (playerB.currentTime > 0) {
-       value = Math.floor((100 / playerB.duration) * playerB.currentTime);
-    }
-    
-    if (playerB.ended) {
-        status.className = 'fas fa-play status';
-        value = 0;
-        document.querySelector('#timeB').textContent ='0:00';
+        document.querySelector('#'+$(this).siblings('.progressTime').attr('id')).textContent ='0:00';
     }
     progress.style.width = value + "%"; 
 }
 
 
+
+// ************************************
 // Gestion de la barre de volume
-//     ++++++++++++++++++++++++++++++++++++
-//     !!! Même types de problemes que la barre de progression !!!
-//     ++++++++++++++++++++++++++++++++++++
+// ************************************
+//     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//     !!! Pas réussi à réunir en une fonction  !!!
+//     !!! pour chaque barre de volume          !!!
+//     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 var e = document.querySelector('#vlm-conA');
-var eInner = document.querySelector('#vlm-sliderA');
 var drag = false;
-e.addEventListener('mousedown',function(ev){
-   drag = true;
-   updateBar(ev.clientX);
-});
+// const vlm = document.querySelectorAll('.volume-slider-con');
+// 
+// for(var j=0, JMax = vlm.length; j < JMax; j++) {
+//     vlm[i].addEventListener('mousedown',function(ev){
+//         drag = true;
+//         updateBar(ev.clientX);
+//      });
+// }
+
+var eInner = document.querySelector('#vlm-sliderA');
+
+e.addEventListener('mousedown',
+    function(ev){
+        drag = true;
+        updateBar(ev.clientX);
+    }
+);
 document.addEventListener('mousemove',function(ev){
    if(drag){
       updateBar(ev.clientX);
@@ -163,8 +145,11 @@ var updateBar = function (x, vol) {
    var volumeClass=document.querySelector('#vlmA');
         var percentage;
 
-        if (playerA.muted) {
-            playerA.muted = false;
+        // console.log(this);
+        
+
+        if (players[0].muted) {
+            players[0].muted = false;
         }
         if (vol) {
             percentage = vol * 100;
@@ -184,7 +169,7 @@ var updateBar = function (x, vol) {
         }
 
         eInner.style.width = percentage +'%';
-        playerA.volume = percentage / 100;
+        players[0].volume = percentage / 100;
 };
 
 var f = document.querySelector('#vlm-conB');
@@ -204,14 +189,12 @@ document.addEventListener('mouseup',function(ev){
     dragF = false;
 });
 var updateBarB = function (x, vol) {
-var volume = e;
-var volumeClass=document.querySelector('#vlmB');
+        var volume = e;
+        var volumeClass=document.querySelector('#vlmB');
 
         var percentage;
-        //if only volume have specificed
-        //then direct update volume
-        if (playerB.muted) {
-        playerB.muted = false;
+        if (players[1].muted) {
+            players[1].muted = false;
         }
         if (vol) {
             percentage = vol * 100;
@@ -231,7 +214,7 @@ var volumeClass=document.querySelector('#vlmB');
         }
         //update volume bar and video volume
         fInner.style.width = percentage +'%';
-        playerB.volume = percentage / 100;
+        players[1].volume = percentage / 100;
 };
 
 
