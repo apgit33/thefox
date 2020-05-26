@@ -115,15 +115,6 @@ function updateProgress() {
 
 var e = document.querySelector('#vlm-conA');
 var drag = false;
-// const vlm = document.querySelectorAll('.volume-slider-con');
-// 
-// for(var j=0, JMax = vlm.length; j < JMax; j++) {
-//     vlm[i].addEventListener('mousedown',function(ev){
-//         drag = true;
-//         updateBar(ev.clientX);
-//      });
-// }
-
 var eInner = document.querySelector('#vlm-sliderA');
 
 e.addEventListener('mousedown',
@@ -144,10 +135,6 @@ var updateBar = function (x, vol) {
    var volume = e;
    var volumeClass=document.querySelector('#vlmA');
         var percentage;
-
-        // console.log(this);
-        
-
         if (players[0].muted) {
             players[0].muted = false;
         }
@@ -189,7 +176,7 @@ document.addEventListener('mouseup',function(ev){
     dragF = false;
 });
 var updateBarB = function (x, vol) {
-        var volume = e;
+        var volume = f;
         var volumeClass=document.querySelector('#vlmB');
 
         var percentage;
@@ -211,7 +198,6 @@ var updateBarB = function (x, vol) {
         } else {
             volumeClass.className = 'fas fa-volume-up vlm';
         }
-        //update volume bar and video volume
         fInner.style.width = percentage +'%';
         players[1].volume = percentage / 100;
 };

@@ -11,22 +11,22 @@
 <body>
     <header>
         <!-- top bar -->
-        <div class="header-1 d-flex between align-item-center container mr-0 ">
+        <div class="header-1 d-flex between align-item-center container mr-0 column-mobile">
             <!-- choose to langages -->
-            <div class="d-flex between align-item-center top-header">
+            <div class="d-flex between align-item-center top-header column-mobile480">
                 <div class="langages d-flex align-item-center">
-                    <p class="f-lato-bold f-19 color-text mr-right1">Choose your langages</p> 
+                    <p class="f-lato-bold f-19 mr-right1">Choose your langages</p> 
                     <p><a href="#"><img src="img/Shape-3.png" alt="Icon choose your langages"></a></p>
                 </div>
     
                 <!-- réseaux sociaux -->
                 <div class="d-flex align-item-center mycart">
                     <p class="mr-right01 mr-right02"><img src="img/Shape-244.png" alt="Logo my cart"></p>
-                    <p class="f-lato-black f-13 color-text">MY CART</p>
+                    <p class="f-lato-black f-13">MY CART</p>
                 </div>
             </div>
 
-                <ul class="d-flex">
+                <ul class="d-flex between social">
                     <li><a href="#"><span data-icon="&#xe093;"></span></a></li>
                     <li><a href="#"><span data-icon="&#xe094;"></span></a></li>
                     <li><a href="#"><span data-icon="&#xe097;"></span></a></li>
@@ -44,7 +44,7 @@
                     <p class="logo mr-right1 mr-top1"><img src="img/Vector-Smart-Object.png" alt="Logo thefox"></p>
                     <p class="logo mr-top1">the<span>fox</span></p>
                 </div>
-                <!-- navigation ---------------------------------------------->
+                <!-- navigation -->
                 <nav id="lemenu">
                     <ul class="d-flex ">
                         <li><a href="#">Home</a></li>
@@ -63,8 +63,8 @@
             </div>
         </div>
 
-        <!-- Title Blog ------------------------------------------------>
-        <div class="blog container mr-0 d-flex align-item-center between"> 
+        <!-- Title Blog -->
+        <div class="blog container mr-0 d-flex align-item-center between column-mobile480"> 
             <div>
                 <h1>Blog Masonry Style</h1>
             </div>
@@ -153,7 +153,7 @@
                                     </p>
     
                                     <h2>Slideshow Post Style</h2>
-                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</a></span></p>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
                                 </header>
     
                                 <!-- partie principale de l'article -->
@@ -171,7 +171,7 @@
                                 <header>
                                     <iframe width="330" height="250" src="https://www.youtube.com/embed/9YffrCViTVk" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
                                     <h2>Youtube Video Post</h2>
-                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</a></span></p>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
                                 </header>
                 
                                 <!-- partie principale de l'article -->
@@ -331,15 +331,15 @@
                                                 <audio id="audioPlayerA" ontimeupdate="update(this)">                                   
                                                     <source src="media/test.mp3">Your browser does not support the audio element.   
                                                 </audio>
-                                                <span id="statusA" class="fas fa-play status"></span>
-                                                <span  id="timeA" class="progressTime">0:00</span>
+                                                <div id="statusA" class="fas fa-play status"></div>
+                                                <div  id="timeA" class="progressTime">0:00</div>
                                                 <div class="progressBar">
-                                                    <span id="progressA" class="progress"></span>
+                                                    <div id="progressA" class="progress"></div>
                                                 </div>
-                                                <span id="vlmA" class="fas fa-volume-up vlm"></span>
-                                                <span id="vlm-conA" class="volume-slider-con">
+                                                <div id="vlmA" class="fas fa-volume-up vlm"></div>
+                                                <div id="vlm-conA" class="volume-slider-con">
                                                     <div id="vlm-sliderA" class="volume-slider"></div>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>                          
                                         <h2>Audio Post Style</h2>
@@ -428,15 +428,15 @@
                                                 <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3">
                                                 Your browser does not support the audio element.   
                                             </audio>
-                                            <span id="statusB" class="fas fa-play status"></span>
-                                            <span  id="timeB" class="progressTime">0:00</span>
+                                            <div id="statusB" class="fas fa-play status"></div>
+                                            <div  id="timeB" class="progressTime">0:00</div>
                                             <div class="progressBar">
-                                                <span id="progressB" class="progress"></span>
+                                                <div id="progressB" class="progress"></div>
                                             </div>
-                                            <span id="vlmB" class="fas fa-volume-up vlm"></span>
-                                            <span id="vlm-conB" class="volume-slider-con">
+                                            <div id="vlmB" class="fas fa-volume-up vlm"></div>
+                                            <div id="vlm-conB" class="volume-slider-con">
                                                 <div id="vlm-sliderB" class="volume-slider"></div>
-                                            </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <h2>Audio Post Style</h2>
@@ -464,7 +464,7 @@
         </div>
     </main>
     
-    <!-- Footer ------------------------------------------------------------------------>
+    <!-- Footer -->
     <footer>
         <!-- FOOTER - partie 1 -->
         <div class="footer-footer">
@@ -548,20 +548,20 @@
                 <!-- FOOTER - Réseaux sociaux -->
                 <div>
                     <ul class="d-flex">
-                        <li><a href="#"><span data-icon="&#xe093"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe094"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe097"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe09c"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe09d"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe09b"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe09a"></span></a></li>
-                        <li><a href="#"><span data-icon="&#xe09e"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe093;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe094;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe097;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09c;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09d;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09b;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09a;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09e;"></span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/6c7241f45d.js" crossorigin="anonymous"></script>
 </body>
