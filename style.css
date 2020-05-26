@@ -719,8 +719,6 @@ Début media queries
 		width: 50%;
 	}
 }
-	} 
-}
 
 @media screen and (max-width:61.9931rem) { 
 
@@ -782,7 +780,7 @@ Début media queries
 }
 
 @media screen and (max-width:29.9988rem){ 
-	
+
 	.column-mobile480 {
 		flex-direction: column;
 	}
