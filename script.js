@@ -1,4 +1,4 @@
-
+// Gestion des likes sous les articles
 $(".fa-heart").on('click', function(){
     // initialisation d'un compteur avec la valeur du texte de la balise voisine
     let cpt = $(this).next().text();
@@ -14,6 +14,10 @@ $(".fa-heart").on('click', function(){
     }
 });
 
+// **************************************
+// Début Gestion du/des lescteurs audio
+// **************************************
+
 function update(playerX) { 
     var time = playerX.currentTime; // Temps écoulé
     document.querySelector('#'+$('#'+playerX.id).siblings('.progressTime').attr('id')).textContent = formatTime(time);
@@ -27,12 +31,10 @@ function formatTime(time) {
     if (secs < 10) {
         secs = "0" + secs;
     }
-	
     if (hours) {
         if (mins < 10) {
             mins = "0" + mins;
         }
-		
         return hours + ":" + mins + ":" + secs; // hh:mm:ss
     } else {
         return mins + ":" + secs; // mm:ss
@@ -44,7 +46,6 @@ function formatTime(time) {
 function lecteurId (x){
     return (document.querySelector('#' + x.siblings(':first').attr('id')));
 }
-
 
 // changement de l'icone + play/pause du lecteur au click
 $(".status").on('click', function(){
@@ -72,9 +73,9 @@ $(".fa-volume-up").on('click', function(){
     }
 });
 
-// ************************************
+// ------
 // Barre de progression pendant la lecture de l'audio
-// ************************************
+// ------
 
 
 // on récup tous les lecteurs audio présents dans un array
@@ -105,9 +106,9 @@ function updateProgress() {
 
 
 
-// ************************************
+// ------
 // Gestion de la barre de volume
-// ************************************
+// ------
 //     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //     !!! Pas réussi à réunir en une fonction  !!!
 //     !!! pour chaque barre de volume          !!!
@@ -202,10 +203,14 @@ var updateBarB = function (x, vol) {
         players[1].volume = percentage / 100;
 };
 
+// **************************************
+// Fin de la Gestion du/des lescteurs audio
+// **************************************
+
 
 // Menu ---------------------------------------------------
 
-// "use strict";
+"use strict";
 window.addEventListener("DOMContentLoaded", (event) => {
   /* MENU */
   const lemenu = document.getElementById("lemenu");
