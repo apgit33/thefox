@@ -713,8 +713,7 @@ Début media queries
 	#lemenu{
 		position: fixed;
 		right :1rem;
-		top: 7rem; 
-		
+		top: 7rem; 	
 	}
 	#lemenu ul{
 		flex-direction:column;
@@ -722,21 +721,22 @@ Début media queries
 		margin: 4rem 0;
 		background-color: var(--color-main);
 		border-radius: 5px;
-		width: 6rem;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-	
 	}
 	#lemenu a{
 		border-top: none;
 		text-transform: uppercase;
+		margin-left: 0;
 	}
 	#lemenu li{
 		margin-bottom: 0.3rem;
 		margin-right: 1rem;
+		text-align: right;
+
 	}
 	#lemenu > a:hover {	
-		color:var(--color-secondary);	
+		color:var(--color-secondary);
 	}
 	
 	/* button menu burger */
