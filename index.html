@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive-groupe</title>
+    <title>The Fox - responsive-groupe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     
@@ -11,22 +12,22 @@
 <body>
     <header>
         <!-- top bar -->
-        <div class="header-1 d-flex between align-item-center container mr-0 ">
+        <div class="header-1 d-flex between align-item-center container mr-0 column-mobile">
             <!-- choose to langages -->
-            <div class="d-flex between align-item-center top-header">
+            <div class="d-flex between align-item-center top-header column-mobile480">
                 <div class="langages d-flex align-item-center">
-                    <p class="f-lato-bold f-19 color-text mr-right1">Choose your langages</p> 
+                    <p class="f-lato-bold f-19 mr-right1">Choose your langages</p> 
                     <p><a href="#"><img src="img/Shape-3.png" alt="Icon choose your langages"></a></p>
                 </div>
     
                 <!-- réseaux sociaux -->
                 <div class="d-flex align-item-center mycart">
                     <p class="mr-right01 mr-right02"><img src="img/Shape-244.png" alt="Logo my cart"></p>
-                    <p class="f-lato-black f-13 color-text">MY CART</p>
+                    <p class="f-lato-black f-13">MY CART</p>
                 </div>
             </div>
 
-                <ul class="d-flex">
+                <ul class="d-flex between social">
                     <li><a href="#"><span data-icon="&#xe093;"></span></a></li>
                     <li><a href="#"><span data-icon="&#xe094;"></span></a></li>
                     <li><a href="#"><span data-icon="&#xe097;"></span></a></li>
@@ -44,7 +45,7 @@
                     <p class="logo mr-right1 mr-top1"><img src="img/Vector-Smart-Object.png" alt="Logo thefox"></p>
                     <p class="logo mr-top1">the<span>fox</span></p>
                 </div>
-                <!-- navigation ---------------------------------------------->
+                <!-- navigation -->
                 <nav id="lemenu">
                     <ul class="d-flex ">
                         <li><a href="#">Home</a></li>
@@ -63,8 +64,8 @@
             </div>
         </div>
 
-        <!-- Title Blog ------------------------------------------------>
-        <div class="blog container mr-0 d-flex align-item-center between"> 
+        <!-- Title Blog -->
+        <div class="blog container mr-0 d-flex align-item-center between column-mobile480"> 
             <div>
                 <h1>Blog Masonry Style</h1>
             </div>
@@ -145,7 +146,7 @@
                         <article class="slideshow">
                             <div class="interieur">
                                 <header>
-                                    <p class="show">
+                                    <p class="show slide">
                                         <img src="img/slide.png" alt="blog écrit en lettre" width="330" height="250">
                                         <span class="fas fa-expand-alt"></span>    
                                         <span class="fas fa-chevron-left"></span>    
@@ -153,7 +154,7 @@
                                     </p>
     
                                     <h2>Slideshow Post Style</h2>
-                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</a></span></p>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
                                 </header>
     
                                 <!-- partie principale de l'article -->
@@ -171,7 +172,7 @@
                                 <header>
                                     <iframe width="330" height="250" src="https://www.youtube.com/embed/9YffrCViTVk" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title=""></iframe>
                                     <h2>Youtube Video Post</h2>
-                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</a></span></p>
+                                    <p class="author">By Tran Mau Tri Tam <span class="barre">|</span> <a href="#"><span class="categories">Video</span></a></p>
                                 </header>
                 
                                 <!-- partie principale de l'article -->
@@ -303,7 +304,7 @@
                             <article class="slideshow">
                                 <div class="interieur">
                                     <header>
-                                        <p class="show grand-slide">
+                                        <p class="show grand-slide slide">
                                             <img src="img/slideshow.png" alt="pellicule photo" width="330" height="400">
                                             <span class="fas fa-expand-alt"></span>
                                             <span class="fas fa-chevron-left"></span>
@@ -331,15 +332,15 @@
                                                 <audio id="audioPlayerA" ontimeupdate="update(this)">                                   
                                                     <source src="media/test.mp3">Your browser does not support the audio element.   
                                                 </audio>
-                                                <span id="statusA" class="fas fa-play status"></span>
-                                                <span  id="timeA" class="progressTime">0:00</span>
+                                                <div id="statusA" class="fas fa-play status"></div>
+                                                <div  id="timeA" class="progressTime">0:00</div>
                                                 <div class="progressBar">
-                                                    <span id="progressA" class="progress"></span>
+                                                    <div id="progressA" class="progress"></div>
                                                 </div>
-                                                <span id="vlmA" class="fas fa-volume-up vlm"></span>
-                                                <span id="vlm-conA" class="volume-slider-con">
+                                                <div id="vlmA" class="fas fa-volume-up vlm"></div>
+                                                <div id="vlm-conA" class="volume-slider-con">
                                                     <div id="vlm-sliderA" class="volume-slider"></div>
-                                                </span>
+                                                </div>
                                             </div>
                                         </div>                          
                                         <h2>Audio Post Style</h2>
@@ -399,7 +400,7 @@
                         <article class="slideshow">
                             <div class="interieur">
                                 <header>
-                                    <p class="show">
+                                    <p class="show slide">
                                         <img src="img/slide2.png" alt="blog écrit en lettre" width="330" height="250">
                                         <span class="fas fa-expand-alt"></span>
                                         <span class="fas fa-chevron-left"></span>
@@ -428,15 +429,15 @@
                                                 <source src="media/Damian-Marley-Welcome-to-Jamrock.mp3">
                                                 Your browser does not support the audio element.   
                                             </audio>
-                                            <span id="statusB" class="fas fa-play status"></span>
-                                            <span  id="timeB" class="progressTime">0:00</span>
+                                            <div id="statusB" class="fas fa-play status"></div>
+                                            <div  id="timeB" class="progressTime">0:00</div>
                                             <div class="progressBar">
-                                                <span id="progressB" class="progress"></span>
+                                                <div id="progressB" class="progress"></div>
                                             </div>
-                                            <span id="vlmB" class="fas fa-volume-up vlm"></span>
-                                            <span id="vlm-conB" class="volume-slider-con">
+                                            <div id="vlmB" class="fas fa-volume-up vlm"></div>
+                                            <div id="vlm-conB" class="volume-slider-con">
                                                 <div id="vlm-sliderB" class="volume-slider"></div>
-                                            </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <h2>Audio Post Style</h2>
@@ -464,103 +465,104 @@
         </div>
     </main>
     
-    <!-- Footer ------------------------------------------------------------------------>
+    <!-- Footer -->
     <footer>
         <!-- FOOTER - partie 1 -->
-        <div id="footer-part1">
-            <div class="d-flex between container mr-0">
-                <!-- Recent post -->
-                <div id="footer-enf1"> 
-                    <h2 class="margin-top-100">RECENT POST</h2>
-                    <div> <hr> </div>
-                    <p class="title-article mr-top2">Amazing Standard Post</p>
-                    <p class="date-article">26 May, 2017</p>
-                    <div class="border-top-deco">
-                        <p class="title-article mr-top1">Amazing Text post</p>
+        <div class="footer-footer">
+            <div class="d-flex between container mr-0 wrap-media footer-part1">
+                <div class="d-flex around post-footer">
+                    <!-- Recent post -->
+                    <div class="footer-enf1"> 
+                        <h2 class="margin-top-100">RECENT POST</h2>
+                        <p class="title-article mr-top2">Amazing Standard Post</p>
                         <p class="date-article">26 May, 2017</p>
+                        <div class="border-top-deco">
+                            <p class="title-article mr-top1">Amazing Text post</p>
+                            <p class="date-article">26 May, 2017</p>
+                        </div>
+                        <div class="border-top-deco">
+                            <p class="title-article">Amazing Video post</p>
+                            <p class="date-article">26 May, 2017</p>
+                        </div>
                     </div>
-                    <div class="border-top-deco">
-                        <p class="title-article">Amazing Video post</p>
-                        <p class="date-article">26 May, 2017</p>
-                    </div>
-                </div>
-                <!-- Recent comments -->
-                <div id="footer-enf2">
-                    <h2 class="margin-top-100">RECENT COMMENTS</h2>
-                    <div> <hr> </div>
-                    <p class="title-article mr-top2">Tran Mau Tri tam</p>
-                    <p class="date-article">On Blog title Amazing Design</p>
-        
-                    <div class="border-top-deco">
-                        <p class="title-article">Sam isbister</p>
+                    <!-- Recent comments -->
+                    <div class="footer-enf2">
+                        <h2 class="margin-top-100">RECENT COMMENTS</h2>
+                        <p class="title-article mr-top2">Tran Mau Tri tam</p>
                         <p class="date-article">On Blog title Amazing Design</p>
-                    </div>
-        
-                    <div class="border-top-deco">
-                        <p class="title-article">Wjnd Baby</p>
-                        <p class="date-article">On Blog title Amazing Design</p>
-                    </div>
-                </div>
-        
-                <!-- Archives -->
-                <div id="footer-enf3">
-                    <h2 class="margin-top-100">ARCHIVES</h2>
-                    <div> <hr> </div>
-                    <p class="title-article mr-top2">March 2017</p>
-                    <p class="date-article">1509 Posted</p>
-        
-                    <div class="border-top-deco">
-                        <p class="title-article">February 2017</p>
-                        <p class="date-article">1109 Posted</p>
-                    </div>
-        
-                    <div class="border-top-deco">
-                        <p class="title-article">January 2017</p>
-                        <p class="date-article">1509 Posted</p>
-                    </div>
-                </div>
-        
-                <!-- About thefox -->
-                <div id="footer-enf4">
-                    <h2 class="margin-top-100">ABOUT THEFOX</h2>
-                    <div> <hr> </div>
-                    <p class="title-article mr-top2">Designed bytham Tran</p>
-                    <p class="date-article">The Best PSD Author on Themeforest</p>
-        
-                    <div class="border-top-deco">
-                        <p class="date-article mr-top1 about-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis at arcu eu consectetur. 
-                            Nam commodo posuere leo, eget convallis leo varius eget.
-                        </p> 
-                    </div>
-                    <p><a href="#" class="vert learn-more">LEARN MORE</a></p>
-                </div>
-        </div>
 
-        <!-- FOOTER - Bottom bar -->
-            <div id="bg-color">
-                <div class="d-flex between mr-0 align-item-center container">
-                    <!-- FOOTER - source -->
-                    <div>
-                        <p class="mr-top3 source">© 2014 TheFox Design. All Rights Reserved. Designed by <span class="vert">Tran Mau Tri Tam</span>.</p>
+                        <div class="border-top-deco">
+                            <p class="title-article">Sam isbister</p>
+                            <p class="date-article">On Blog title Amazing Design</p>
+                        </div>
+
+                        <div class="border-top-deco">
+                            <p class="title-article">Wjnd Baby</p>
+                            <p class="date-article">On Blog title Amazing Design</p>
+                        </div>
                     </div>
-                    <!-- FOOTER - Réseaux sociaux -->
-                    <div>
-                        <ul class="d-flex mr-top3">
-                            <li><a href="#"><span data-icon="&#xe093"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe094"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe097"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe09c"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe09d"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe09b"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe09a"></span></a></li>
-                            <li><a href="#"><span data-icon="&#xe09e"></span></a></li>
-                        </ul>
+                </div>
+        
+                <div class="d-flex around post-footer">
+                    <!-- Archives -->
+                    <div class="footer-enf3">
+                        <h2 class="margin-top-100">ARCHIVES</h2>
+                        <p class="title-article mr-top2">March 2017</p>
+                        <p class="date-article">1509 Posted</p>
+            
+                        <div class="border-top-deco">
+                            <p class="title-article">February 2017</p>
+                            <p class="date-article">1109 Posted</p>
+                        </div>
+            
+                        <div class="border-top-deco">
+                            <p class="title-article">January 2017</p>
+                            <p class="date-article">1509 Posted</p>
+                        </div>
+                    </div>
+            
+                    <!-- About thefox -->
+                    <div class="footer-enf4">
+                        <h2 class="margin-top-100">ABOUT THEFOX</h2>
+                        <p class="title-article mr-top2">Designed bytham Tran</p>
+                        <p class="date-article">The Best PSD Author on Themeforest</p>
+            
+                        <div class="border-top-deco">
+                            <p class="date-article mr-top1 about-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis at arcu eu consectetur. 
+                                Nam commodo posuere leo, eget convallis leo varius eget.
+                            </p> 
+                        </div>
+                        <p><a href="#" class="vert learn-more">LEARN MORE</a></p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- FOOTER - Bottom bar -->
+        <div id="bg-color">
+            <div class="d-flex between mr-0 align-item-center container column-mobile">
+                <!-- FOOTER - source -->
+                <div>
+                    <p class="source">© 2014 TheFox Design. All Rights Reserved. Designed by <span class="vert">Tran Mau Tri Tam</span>.</p>
+                </div>
+                <!-- FOOTER - Réseaux sociaux -->
+                <div>
+                    <ul class="d-flex social">
+                        <li><a href="#"><span data-icon="&#xe093;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe094;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe097;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09c;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09d;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09b;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09a;"></span></a></li>
+                        <li><a href="#"><span data-icon="&#xe09e;"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/6c7241f45d.js" crossorigin="anonymous"></script>
 </body>
